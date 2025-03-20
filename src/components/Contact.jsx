@@ -7,12 +7,7 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, slideIn } from '../utils/motion';
-
-
-//template_mds1zdg
-
-// service_datefxp
-//NmXYUVsmX61y8CUBg
+import { keys } from '../constants';
 
 const Contact = () => {
 
@@ -38,8 +33,8 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      "service_datefxp",
-      "template_mds1zdg",
+      keys.service_key,
+      keys.template_key,
       {
         from_name: form.name,
         to_name: 'Vyshnav',
@@ -47,7 +42,7 @@ const Contact = () => {
         to_email: 'vyshnavs0811@gmail.com',
         message: form.message
       },
-      "NmXYUVsmX61y8CUBg"
+      keys.public_key
     ).then(()=>{
       setLoading(false);
       alert("Thank you! i will get back to you asap.");
@@ -63,9 +58,7 @@ const Contact = () => {
       alert("Something went wronng! Please try again.");
     })
   }
-
-
-
+  
   return (
     <div className='xl:mt-12 xl:flex-row flex-xol-reverse flex gap-10 overflow-hidden'>
       <motion.div

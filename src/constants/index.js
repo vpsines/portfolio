@@ -257,4 +257,10 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const keys = {
+  service_key:import.meta.env.VITE_EMAILJS_SERVICE_KEY,
+  template_key:import.meta.env.VITE_EMAILJS_TEMPLATE_KEY,
+  public_key:import.meta.env.VITE_EMAIJS_PUBLIC_KEY
+};
+
+export { services, technologies, experiences, testimonials, projects, keys };
