@@ -29,7 +29,15 @@ import {
   postgresql,
   experion,
   agrivator,
-  finkassa
+  finkassa,
+  kinamarket_web_app,
+  nattupedika,
+  pind_balluchi,
+  gayaan,
+  electriva,
+  github_social,
+  linkedIn,
+  mail
 } from "../assets";
 
 export const navLinks = [
@@ -59,6 +67,25 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  }
+];
+
+const socials = [
+  {
+    socialUrl: "https://github.com/vpsines",
+    icon: github_social,
+    title:"Github",
+  },
+  {
+    socialUrl: "https://www.linkedin.com/in/vyshnav-sasidharan",
+    icon: linkedIn,
+    title:"LinkedIn",
+
+  },
+  {
+    socialUrl: "mailto:vyshnavs0811@gmail.com",
+    icon: mail,
+    title:"E-mail",
   }
 ];
 
@@ -193,30 +220,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Gayaan",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Gayaan is redefining matchmaking by providing a secure, feature-rich, and culturally tailored dating experience for Somali singles worldwide.",
     tags: [
       {
         name: "react",
@@ -231,29 +237,128 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: gayaan,
     source_code_link: "https://github.com/",
+    isMobileApp:true,
+    live_link:"https://kiinamarketwebshop.web.app/",
+    isMobileApp:false,
+    isPlaybackVideo:true,
   },
   {
-    name: "Trip Guide",
+    name: "Kinnemarket Web App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An innovative geographic data provider app built with Flutter, Firebase, and Firebase Cloud Messaging.",
     tags: [
       {
-        name: "nextjs",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "firebase-cloud-messaging",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: kinamarket_web_app,
     source_code_link: "https://github.com/",
+    live_link:"https://kiinamarketwebshop.web.app/",
+    isMobileApp:false,
+    isPlaybackVideo:false,
+  },
+  {
+    name: "Electriva",
+    description:
+      "A Flutter-based mobile application that enables seamless EV charging by providing real-time charging station locations ",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "google-map-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: electriva,
+    source_code_link: "https://github.com/",
+    live_link:"https://play.google.com/store/apps/details?id=com.electriva",
+    isMobileApp:true,
+    isPlaybackVideo:true,
+    isSourceCodeAvailable:false,
+  },
+  {
+    name: "Pind Balluchi",
+    description:
+      "A cutting‑edge restaurant ordering mobile app built using Flutter and Firebase.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "google-map-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase-auth",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pind_balluchi,
+    source_code_link: "https://github.com/",
+    isSourceCodeAvailable:false,
+    isPlaybackVideo:false,
+    live_link:"https://play.google.com/store/apps/details?id=com.app.uengage.pindballuchi"
+  },
+  {
+    name: "Loha",
+    description:
+      "An intuitive e-commerce app for creating, customizing, and purchasing digital and printed collage albums.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase-cloud-messaging",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+    isPlaybackVideo:true,
+    isSourceCodeAvailable:false,
+  },
+  {
+    name: "Nattupedika",
+    description:
+      "An innovative geographic data provider app built with Flutter, Firebase, and Firebase Cloud Messaging.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase-cloud-messaging",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nattupedika,
+    source_code_link: "https://github.com/Nattupeedikaa/nattupedika",
+    isMobileApp:true,
+    isSourceCodeAvailable:true,
+    isPlaybackVideo:false,
   },
 ];
 
@@ -263,4 +368,6 @@ const keys = {
   public_key:import.meta.env.VITE_EMAIJS_PUBLIC_KEY
 };
 
-export { services, technologies, experiences, testimonials, projects, keys };
+const resumeUrl = "https://drive.google.com/file/d/1ruC-LTnIRSVywUiXImwSbSNysD3JMil8/view?usp=sharing";
+
+export { services, technologies, experiences, testimonials, projects, keys, resumeUrl, socials };

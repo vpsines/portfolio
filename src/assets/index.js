@@ -36,6 +36,15 @@ import experion from "./company/experion.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import kinamarket_web_app from './kinamarket_web_app.png';
+import nattupedika from './nattupedika.png';
+import pind_balluchi from './pind_balluchi.png';
+import gayaan from './gayaan.png';
+import electriva from './electriva.png';
+
+import github_social from "./socials/linkedin-light.svg";
+import linkedIn from "./socials/github-light.svg";
+import mail from "./socials/email.svg";
 
 export {
   logo,
@@ -72,5 +81,13 @@ export {
   postgresql,
   experion,
   agrivator,
-  finkassa
+  finkassa,
+  kinamarket_web_app,
+  nattupedika,
+  pind_balluchi,
+  gayaan,
+  electriva,
+  github_social,
+  linkedIn,
+  mail
 };

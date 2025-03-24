@@ -34,12 +34,15 @@ const About = () => {
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px]  max-w-3xl leading-[30px]'>
         Hello there! I'm Vyshnav Sasidharan. I hail from the God's own country, Kerala in India.I'm a passionate and versatile software developer with a love for crafting elegant and efficient solutions to complex problems.
-
+      </motion.p>
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px]  max-w-3xl leading-[30px]'>
         My journey as a developer started back when I was a curious teenager tinkering with some C++ code, and it has evolved into a fulfilling career. Over the years, I have honed my skills in Web and Mobile app development and I am adept at both front-end and back-end development.
-        Collaboration is a value I hold dear, and I thrive in team environments. I take great pride in my ability to communicate technical concepts to non-technical stakeholders effectively, ensuring a seamless bridge between development and business goals.
+        Collaboration is a value I hold dear, and I thrive in team environments.
+      </motion.p>
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px]  max-w-3xl leading-[30px]'>
+        I take great pride in my ability to communicate technical concepts to non-technical stakeholders effectively, ensuring a seamless bridge between development and business goals.
         Continuous learning is my mantra, and I am always eager to take on new challenges and learn from diverse perspectives
       </motion.p>
-
       <div className='mt-20 flex flex-wrap gap-10'>{
         services.map((service,index)=> (<ServiceCard key={index} index={index} {...service} />))
       }</div>
